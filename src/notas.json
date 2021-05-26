@@ -1,0 +1,33 @@
+[
+    {
+        "id":"1",
+        "title":"Hacer la tarea",
+        "description":"Tengo que organizar mi tarea de la más difícil a la más fácil, enumerarlas y comezar a realizarla",
+        "user":"Nadia"
+    },
+    {
+        "id":"2",
+        "title":"Hacer la comida",
+        "description":"Tengo que planear que voy a cocinar, comprar lo necesario y empezar a cocinar",
+        "user":"Sergio"
+    },
+    {
+        "id":"3",
+        "title":"Tender mi cama",
+        "description":"Levantarme por la mañana y antes de ir a la escuela, tender mi cama",
+        "user":"Sara"
+    },
+    {
+        "id":"4",
+        "title":"Comprar un auto",
+        "description":"Tengo que ahorrar cada mes para poder comprar mi auto",
+        "user":"Javier"
+    },
+    {
+        "id":"5",
+        "title":"Llamarle a mi abue",
+        "description":"Regresando del trabajo, llamarle a mi abue",
+        "user":"Ximena"
+    }
+
+]

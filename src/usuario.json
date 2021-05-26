@@ -1,0 +1,25 @@
+[
+    {
+        "id":"1",
+        "name":"Nadia Matus",
+        "email":"nivonne.matus@gmail.com",
+        "password":"nadia123",
+        "date":"17-05-2021"
+    },
+    {
+        "id":"2",
+        "name":"Javier Medina",
+        "email":"javier.medina@gmail.com",
+        "password":"javier123",
+        "date":"15-05-2021"
+    },
+    {
+        "id":"3",
+        "name":"Adrián Méndez",
+        "email":"adrian@gmail.com",
+        "password":"adrian123",
+        "date":"10-05-2021"
+    }
+    
+    
+]
