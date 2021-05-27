@@ -3,7 +3,11 @@ const router=Router();
 
 
 router.get('/', (req, res) =>{
-    res.json({"Title": "index"});
+    res.send('Home');
+});
+
+router.get('/about', (req, res) =>{
+    res.send('About');
 });
 
 module.exports=router;
