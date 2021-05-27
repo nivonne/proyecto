@@ -34,6 +34,8 @@ app.use('/api/usuario',require('./routes/usuario-api'));
 app.use(require('./routes/notas'));
 app.use(require('./routes/usuario'));
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
 });
