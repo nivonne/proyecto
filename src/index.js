@@ -5,6 +5,8 @@ const path=require('path');
 const exphbs=require('express-handlebars');
 const methodOverride=require('method-override');
 const session=require('express-session');
+require('./database');
+
 
 app.set('port',process.env.PORT || 3000);
 app.set('json spaces',2);
