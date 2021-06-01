@@ -1,11 +1,13 @@
 const {Router}= require('express');
 const router=Router();
 
+const Note=require('../models/Note');
+
 router.get('/notes/add', (req,res)=>{
     res.render('notes/new-note');
 });
 
-router.post('/notes/new-note', (req,res)=>{
+router.post('/notes/new-note', async (req,res)=>{
     const {title,description}=req.body;
     const errors=[];
     if(!title){
@@ -21,7 +23,9 @@ router.post('/notes/new-note', (req,res)=>{
             description
         });
     }else{
-        res.send('ok');
+       const newNote= new Note({title,description});
+        await newNote.save();
+       res.redirect('/notes');
     }
     
 });
