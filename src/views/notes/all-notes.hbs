@@ -3,11 +3,19 @@
     <div class="col-md-3">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">
-                    {{title}}
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{title}} <a href="#"><i style="color:black ;" class="fas fa-edit"></i></a>
                 </h4>
                 <p>{{description}}</p>
+                <button class="btn btn-danger w-100 btn-sm">Delete</button>
             </div>
+        </div>
+    </div>
+    {{else}}
+    <div class="col-md-3 card mx-auto">
+        <div class="card-body">
+            <p class="lead">There are not notes yet</p>
+            <a href="/notes/add" class="btn btn-success w-100">Create a note</a>
         </div>
     </div>
     {{/each}}
