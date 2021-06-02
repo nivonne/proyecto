@@ -6,6 +6,10 @@ const exphbs=require('express-handlebars');
 const methodOverride=require('method-override');
 const session=require('express-session');
 require('./database');
+const Handlebars=require('handlebars');
+const{
+    allowInsecurePrototypeAccess
+}=require('@handlebars/allow-prototype-access');
 
 
 app.set('port',process.env.PORT || 3000);
@@ -15,7 +19,8 @@ app.engine('.hbs',exphbs({
     defaultLayout:'main',
     layoutsDir:path.join(app.get('views'),'layouts'),
     partialsDir:path.join(app.get('views'),'partials'),
-    extname:'.hbs'
+    extname:'.hbs',
+    handlebars:allowInsecurePrototypeAccess(Handlebars)
 }));
 app.set('view engine', '.hbs');
 
