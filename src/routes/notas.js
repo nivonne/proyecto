@@ -30,8 +30,9 @@ router.post('/notes/new-note', async (req,res)=>{
     
 });
 
-router.get('/notes', (req,res)=>{
-    res.send('Notas');
+router.get('/notes', async (req,res)=>{
+   const notes=await Note.find().sort({date: 'desc'});
+   res.render('notes/all-notes', { notes });
 });
 
 module.exports=router;
