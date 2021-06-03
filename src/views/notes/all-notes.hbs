@@ -7,7 +7,10 @@
                     {{title}} <a href="/notes/edit/{{_id}}"><i style="color:black ;" class="fas fa-edit"></i></a>
                 </h4>
                 <p>{{description}}</p>
-                <button class="btn btn-danger w-100 btn-sm">Delete</button>
+                <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button class="btn btn-danger w-100 btn-sm" type="submit">Delete</button>
+                </form>
             </div>
         </div>
     </div>
