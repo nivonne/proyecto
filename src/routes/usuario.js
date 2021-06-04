@@ -13,6 +13,9 @@ router.post('/users/signup', (req, res)=>{
     console.log(req.body);
     const{name,email,password,confirm_password}=req.body;
     const errors=[];
+    if(name.length <=0 && email.length <=0){
+        errors.push({text:'There are blank fields'});
+    }
     if(password!= confirm_password){
         errors.push({text:'Password do not match'});
     }
