@@ -8,3 +8,7 @@ body{
 .logo{
     width: 30%;
 }
+
+.trabajo{
+    list-style-type: none;
+}
