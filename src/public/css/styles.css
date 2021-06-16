@@ -4,7 +4,9 @@ body{
     background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
-
+.text-dark{
+    font-weight: bold;
+}
 .logo{
     width: 50%;
 }
