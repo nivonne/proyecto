@@ -4,8 +4,7 @@
         <h3>Edit Note</h3>
     </div>
     <div class="card-body"
-        <form action="/notes/edit-note/{{note._id}}?_method=PUT" method="POST">
-            <input type="hidden" name="_method" value="PUT">
+        <form action="">
             <div class="input-group mb-3">
                 <input type="text" name="title" class="form-control" placeholder="Title" value="{{note.title}}">
             </div>
@@ -13,7 +12,10 @@
                 <textarea name="description" class="form-control" placeholder="Description">{{note.description}}</textarea>
             </div>
             <div class="input-group mb-3">
-                <button class="btn btn-dark w-100"  type="submit">Save</button>
+                <form action="/notes/edit-note/{{note._id}}?_method=PUT" method="post">
+                    <input type="hidden" name="_method" value="PUT">
+                    <button class="btn btn-dark w-100"  type="submit">Save</button>
+                </form>  
             </div>
         </form>
     </div>
