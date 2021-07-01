@@ -45,7 +45,8 @@ router.get('/notes/edit/:id', isAuthenticated, async (req, res)=>{
 
 router.put('/notes/edit-note/:id', isAuthenticated, async(req, res)=>{
     const {title,description}= req.body;
-    await Note.findByIdAndUpdate(req.params.id,{title,description});
+    console.log(req.body);
+    await Note.findByIdAndUpdate(req.params.id,{new:true},{title,description});
     req.flash('success_msg', 'Note Updated Successfully');
     res.redirect('/notes');
 });
