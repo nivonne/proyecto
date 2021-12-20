@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb+srv://Nadia_Matus:bottega123@cluster0.gcuc9.mongodb.net/Notas?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://Nadia_Matus:bottega123@cluster0.a1e6q.mongodb.net/NotesNeverForget?retryWrites=true&w=majority', {
     useCreateIndex:true,
     useNewUrlParser:true,
     useFindAndModify:false,
